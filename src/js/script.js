@@ -6,7 +6,7 @@ function salvarHabilidades(event) { //Criando um função
     localStorage.setItem('duracao', duracao); //salvando a duração no localStorage
  
   localStorage.setItem('habilidades', JSON.stringify(selecionados)); //salvando as habilidades no localStorage
-  window.location.href = 'index.html'; //mandando para a página index.html
+  window.location.href = 'planejamento.html'; //mandando para a página index.html
 }   
  
 const habilitados = JSON.parse(localStorage.getItem('habilidades')); //pegando as habilidades salvas no localStorage
