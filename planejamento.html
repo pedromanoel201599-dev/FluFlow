@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="./src/css/estilo.css">
     <title>Fluente Flow</title>
 </head>
 <body>
-    <main>
-        <section class="card">
-            <div class="card-palnejamento">
-                <form onsubmit="salvarHabilidades(event)">
-                    <h2>Monte seu planejamento</h2>
+    <div class="container">
+        <main>
+            <section class="card">
+                <div class="card-geral">
+                    <form onsubmit="salvarHabilidades(event)">
+                        <h2>Monte seu planejamento</h2>
 
-                    <h2>O que você quer estudar?</h2>
+                        <h2>O que você quer estudar?</h2>
 
-                    <label><input type="checkbox" id="escuta" name="Escuta" value="sim">Escutar</label>
-                    <label><input type="checkbox" id="fala" name="Fala" value="sim">Falar</label>
-                    <label><input type="checkbox" id="ler" name="Ler" value="sim">Ler</label>
-                    <label><input type="checkbox" id="escrever" name="Escrever" value="sim">Escrever</label>
-                    <label><input type="checkbox" id="gramatica" name="Gramática" value="sim">Gramática</label>
-                    <label><input type="checkbox" id="vocabulario" name="Vocábulario" value="sim">Vocábulario</label>
+                        <div class="estudo">
+                            <label><input type="checkbox" id="escuta" name="Escuta" value="sim">Escutar</label>
+                            <label><input type="checkbox" id="fala" name="Fala" value="sim">Falar</label>
+                            <label><input type="checkbox" id="ler" name="Ler" value="sim">Ler</label>
+                            <label><input type="checkbox" id="escrever" name="Escrever" value="sim">Escrever</label>
+                            <label><input type="checkbox" id="gramatica" name="Gramática" value="sim">Gramática</label>
+                            <label><input type="checkbox" id="vocabulario" name="Vocábulario" value="sim">Vocábulario</label>
+                        </div>
 
-                    <h2>Quanto tempo por dia?</h2>
+                        <h2>Quanto tempo você vai estudar hoje?</h2>
+                        
+                            <label for="duracao">Quanto tempo você vai estudar?</label>
+                            <select id="duracao" name="duracao" required>
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="15">15 minutos</option>
+                                <option value="30">30 minutos</option>
+                                <option value="45">45 minutos</option>
+                                <option value="60">1 hora</option>
+                                <option value="90">1 hora e 30</option>
+                                <option value="120">2 horas ou mais</option>
+                            </select>
 
-                    <label for="duracao">Quanto tempo você vai estudar?</label>
-                    <select id="duracao" name="duracao" required>
-                        <option value="" disabled selected>Selecione...</option>
-                        <option value="15">15 minutos</option>
-                        <option value="30">30 minutos</option>
-                        <option value="45">45 minutos</option>
-                        <option value="60">1 hora</option>
-                        <option value="90">1 hora e 30</option>
-                        <option value="120">2 horas ou mais</option>
-                    </select>
-
-                    <button type="submit">Criar planejamento</button>
-                </form>
-            </div>
-        </section>
-    </main>
+                        <button type="submit">Criar planejamento</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <script src="src/js/script.js"></script>
 </body>

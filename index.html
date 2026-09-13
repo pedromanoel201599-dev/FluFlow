@@ -15,41 +15,42 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <section id="Meu Perfil">
-            <div class="card-geral">
-                <h1>Meu planejamento de estudos</h1>
-                <p>Veja o que ocê precisa estudar hoje</p>
-                <progress max="100" value="0"></progress>
-                <section>
-                    <label for="dia">Selecione o dia</label>
-                        <select id="dia" name="dia" required>
-                            <option value="" disabled selected>Selecione...</option>
-                            <option value="segunda-feira">Segunda-feira</option>
-                            <option value="terca-feira">Terça-feira</option>
-                            <option value="quarta-feira">Quarta-feira</option>
-                            <option value="quinta-feira">Quinta-feira</option>
-                            <option value="sexta-feira">Sexta-feira</option>
-                            <option value="sabado">Sábado</option>
-                            <option value="domingo">Domingo</option>
-                        </select>
-                </section>
-                <h1>Meu planejamento de estudos</h1>
-                <p>Veja o que você precisa estudar hoje</p>
-                <div id="lista-habilidades">
-                    <p id="tempo-estudo"></p>
+    
+    <div class="container">
+        <main>
+            <section class="card">
+                <div class="card-geral">
+                    <h1>Meu planejamento de estudos</h1>
+                    <p>Veja o que você precisa estudar hoje</p>
+                    <div id="lista-habilidades">
+                        <p id="tempo-estudo"></p>
+                    </div>
+                    <progress max="100" value="0">oi</progress>
+                    <section>
+                        <label for="dia">Selecione o dia</label>
+                            <select id="dia" name="dia" required>
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="segunda-feira">Segunda-feira</option>
+                                <option value="terca-feira">Terça-feira</option>
+                                <option value="quarta-feira">Quarta-feira</option>
+                                <option value="quinta-feira">Quinta-feira</option>
+                                <option value="sexta-feira">Sexta-feira</option>
+                                <option value="sabado">Sábado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>
+                    </section>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
     <aside>
         <h2>Resumo</h2>
         <p id="resumo-tempo"></p>
         <p id="resumo-tarefas"></p>
-        <p id="resumo-progresso"></p>
+        <progress id="resumo-progresso" max="100" value="0"></progress>
     </aside>
+
+     </div>
 
     <footer>
         <p>© 2026 TODOS OS DIREITOS RESERVADOS</p>
